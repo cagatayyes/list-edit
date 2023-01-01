@@ -19,7 +19,7 @@ function List() {
       */
 
       getDataFromApi(
-        "https://api.api-ninjas.com/v1/cars?limit=10&make=bmw"
+        "https://api.api-ninjas.com/v1/cars?limit=10&make=toyota"/* make=mercedes is not fetching any data, sorry for toyota :) */
       ).then((response) => {
         dispatch(setList(response));
       });
