@@ -1,0 +1,25 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  background-color: #282c34;
+  overflow-y: scroll;
+
+  &-rowTitles {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #fff;
+
+    & > h6 {
+      min-width: 100px;
+      max-width: 100px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 5px 0;
+    }
+  }
+
+  &-noData {
+    background-color: #000;
+  }
+}
